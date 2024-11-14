@@ -1,63 +1,71 @@
 Company Employee Management System
-This project is a simple web application for managing employee details such as their name, gender, age, and department. The application allows administrators to perform CRUD (Create, Read, Update, Delete) operations on employee data.
+This is a full-stack web application built using React (Vite), Express, and MongoDB to manage employee details. It includes features for adding, updating, and deleting employee information.
 
 Features
-View Employee Details: Lists all employee records with an option to view and update individual employee details.
-Add New Employee: Allows the admin to add a new employee to the database.
-Update Employee Information: Enables the admin to update employee details such as name, gender, age, and department.
-Delete Employee: Provides the option to delete an employee's record.
-Toast Notifications: Displays success and error messages for various operations.
-Responsive Design: Works on desktop and mobile devices.
+Employee List: View all employees with their details.
+Add Employee: Add new employees to the system.
+Update Employee: Edit existing employee details.
+Delete Employee: Remove an employee from the system.
+Responsive UI: The application is designed to be responsive, adapting to various screen sizes.
 Technologies Used
-Frontend: React.js, Tailwind CSS, React Modal
+Frontend: React (Vite)
 Backend: Express.js
-Database: MongoDB (using Mongoose for MongoDB object modeling)
-API Requests: Axios
-Authentication: Not implemented (for future updates)
-State Management: React State Hook
+Database: MongoDB (via Mongoose)
+Styling: Tailwind CSS
+Modals: React Modal
 Notifications: React Hot Toast
-Installation
-Clone the repository
+Project Setup
+Backend
+Clone the backend repository:
 
 bash
 Copy code
 git clone https://github.com/rishi-raj0104/Company.git
-Install dependencies
-
-For the backend:
-bash
-Copy code
 cd backend
-npm install
-For the frontend:
-bash
-Copy code
-cd frontend
-npm install
-Environment Variables Create a .env file in the backend folder and add the following:
+Install dependencies:
 
 bash
 Copy code
-PORT=5000
-MONGO_URI=your-mongo-db-uri
-Run the project
+npm install
+Create a .env file in the backend folder with the following:
 
-Start the backend server:
+env
+Copy code
+MONGO_URI=your_mongo_connection_url
+PORT=your_preferred_port
+Start the server:
+
 bash
 Copy code
-cd backend
-npm start
-Start the frontend server:
-bash
-Copy code
-cd frontend
 npm run dev
-Access the application
+Frontend
+Navigate to the frontend folder:
 
-The frontend will be available at http://localhost:3000
-The backend API will be available at http://localhost:5000
-Endpoints
-GET /employees: Fetch all employees
-POST /employees: Add a new employee
-PUT /employees/:id: Update an existing employee's details
-DELETE /employees/:id: Delete an employee by ID
+bash
+Copy code
+cd frontend
+Install dependencies:
+
+bash
+Copy code
+npm install
+Start the Vite development server:
+
+bash
+Copy code
+npm run dev
+Run Both Servers
+To run both backend and frontend servers, you can run them in separate terminals or use a tool like concurrently.
+API Endpoints
+GET /api/employees: Fetch all employee records.
+POST /api/employees: Add a new employee.
+PUT /api/employees/
+: Update an existing employee's details.
+DELETE /api/employees/
+: Delete an employee.
+Contributing
+Fork the repository.
+Create a new branch (git checkout -b feature-name).
+Commit your changes (git commit -am 'Add feature').
+Push to the branch (git push origin feature-name).
+Create a new Pull Request.
