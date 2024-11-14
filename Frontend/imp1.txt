@@ -1,0 +1,10 @@
+npm create vite@latest
+Select framework React
+Select Variant Javascript
+'''
+Done. Now run:
+
+  cd vite-project
+  npm install
+  npm run dev
+'''
